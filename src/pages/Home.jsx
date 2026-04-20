@@ -8,7 +8,7 @@ import {
   Server,
   Database,
   Mail,
-  Github,
+  GitHub,
   ExternalLink,
 } from "lucide-react";
 
@@ -16,7 +16,7 @@ import {
 
 
 const handleScroll = (id) => {
-  setOpen(false); 
+ 
   const section = document.getElementById(id); 
 
   if (section) {
@@ -269,7 +269,7 @@ function Home() {
                 href="https://github.com/eyerusabebe0/Gym-front"
                 className="text-[#eab308] flex items-center gap-2 mt-3"
               >
-                <Github size={16} /> GitHub
+                <GitHub size={16} /> GitHub
               </a>
             </div>
 
@@ -289,7 +289,7 @@ function Home() {
                   <ExternalLink size={16} /> Demo
                 </a>
                 <a href="https://github.com/eyerusabebe0/JHAIR-E-Commerce" className="flex items-center gap-1">
-                  <Github size={16} /> GitHub
+                  <GitHub size={16} /> GitHub
                 </a>
               </div>
             </div>
@@ -309,7 +309,7 @@ function Home() {
                   <ExternalLink size={16} /> Demo
                 </a>
               <a href="https://github.com/eyerusabebe0/PropertyApp" className="text-[#eab308] flex items-center gap-2 mt-3">
-                <Github size={16} /> GitHub
+                <GitHub size={16} /> GitHub
               </a>
               </div>
             </div>
@@ -325,7 +325,7 @@ function Home() {
               </p>
 
               <a href="https://github.com/eyerusabebe0/Personal-Finance-Tracker" className="text-[#eab308] flex items-center gap-2 mt-3">
-                <Github size={16} /> GitHub
+                <GitHub size={16} /> GitHub
               </a>
             </div>
 
@@ -422,7 +422,7 @@ function Home() {
 
           {/* GITHUB */}
           <div className="flex items-center gap-4 bg-white/10 p-4 rounded-lg">
-            <Github className="text-[#eab308]" />
+            <GitHub className="text-[#eab308]" />
             <a
               href="https://github.com/eyerusabebe0"
               target="_blank"
