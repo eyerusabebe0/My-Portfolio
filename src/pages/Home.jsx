@@ -1,22 +1,22 @@
-import React from "react";
+
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import React, { useState } from "react";
+
 import {
   Code,
   Cpu,
   Server,
   Database,
   Mail,
-  GitHub,
+
   ExternalLink,
 } from "lucide-react";
 
 
-
-
 const handleScroll = (id) => {
- 
+  
+
   const section = document.getElementById(id); 
 
   if (section) {
@@ -41,6 +41,11 @@ const fadeUp = {
 };
 
 function Home() {
+
+
+    
+
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -269,7 +274,7 @@ function Home() {
                 href="https://github.com/eyerusabebe0/Gym-front"
                 className="text-[#eab308] flex items-center gap-2 mt-3"
               >
-                <GitHub size={16} /> GitHub
+              🐙 GitHub
               </a>
             </div>
 
@@ -289,7 +294,7 @@ function Home() {
                   <ExternalLink size={16} /> Demo
                 </a>
                 <a href="https://github.com/eyerusabebe0/JHAIR-E-Commerce" className="flex items-center gap-1">
-                  <GitHub size={16} /> GitHub
+                  🐙 GitHub
                 </a>
               </div>
             </div>
@@ -309,7 +314,7 @@ function Home() {
                   <ExternalLink size={16} /> Demo
                 </a>
               <a href="https://github.com/eyerusabebe0/PropertyApp" className="text-[#eab308] flex items-center gap-2 mt-3">
-                <GitHub size={16} /> GitHub
+                🐙 GitHub
               </a>
               </div>
             </div>
@@ -325,7 +330,7 @@ function Home() {
               </p>
 
               <a href="https://github.com/eyerusabebe0/Personal-Finance-Tracker" className="text-[#eab308] flex items-center gap-2 mt-3">
-                <GitHub size={16} /> GitHub
+                🐙 GitHub
               </a>
             </div>
 
@@ -422,7 +427,7 @@ function Home() {
 
           {/* GITHUB */}
           <div className="flex items-center gap-4 bg-white/10 p-4 rounded-lg">
-            <GitHub className="text-[#eab308]" />
+            🐙
             <a
               href="https://github.com/eyerusabebe0"
               target="_blank"
