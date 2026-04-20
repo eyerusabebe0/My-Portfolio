@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  /* This forces the dark gray background everywhere */
+  background-color: #09090b !important;
+  color: #ffffff;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #09090b !important;
+  display: block; /* Fixes the centering issue */
+}
+
+/* Remove all the Vite default button and media query junk */
+* {
+  box-sizing: border-box;
+}
