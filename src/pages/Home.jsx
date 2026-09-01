@@ -150,6 +150,11 @@ const certificates = [
     desc: "Participated in a 48-hour team hackathon at Bahir Dar Institute of Technology, building AI-based solutions.",
     href: "/certificates/cert2.jpg",
   },
+  {
+    title: "Sof Omar Technologies",
+    desc: "Awarded for completing the Cakhub project with Sof Omar Technologies.",
+    href: "/certificates/cert3.png",
+  },
 ];
 
 function Home() {
