@@ -1,57 +1,51 @@
-@import "tailwindcss";
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #09090b; /* This is the Dark Gray (Zinc 950) */
-  color: #ffffff;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
-/* 2. Remove the Vite "Centering" behavior */
-body {
-  display: block; /* Changes from 'flex' back to normal 'block' */
+:root {
+  --bg: #0B1210;
+  --surface: #121C18;
+  --surface-2: #17221D;
+  --accent: #CC9B3D;
+  --accent-soft: #E8C777;
+  --accent-2: #4FD1C5;
+  --text: #F2EFE9;
+  --text-muted: #90A69C;
+  --line: rgba(242, 239, 233, 0.1);
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
 }
 
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.font-display {
+  font-family: var(--font-display);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+.font-mono {
+  font-family: var(--font-mono);
 }
 
-.card {
-    padding: 2em;
+::selection {
+  background: var(--accent);
+  color: var(--bg);
 }
 
-.read-the-docs {
-    color: #888;
+::-webkit-scrollbar {
+  width: 10px;
 }
-
-
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-2);
+  border-radius: 8px;
+}
