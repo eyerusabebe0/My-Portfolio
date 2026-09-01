@@ -313,7 +313,18 @@ function Home() {
           I build is multi-tenant by design — I like solving the harder problem of one
           codebase serving many independent clients, rather than a single one-off site.
         </p>
+      </motion.section>
 
+      {/* SKILLS */}
+      <motion.section
+        id="skills"
+        className="py-14 sm:py-20 md:py-24 border-t border-[var(--line)]"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={revealVariants}
+      >
+        <h2 className="font-display text-xl sm:text-2xl text-[var(--accent)] mb-5 sm:mb-6">Skills</h2>
         {/* SKILLS — card grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -334,8 +345,7 @@ function Home() {
         </motion.div>
       </motion.section>
 
-       
-            {/* WORK */}
+      {/* WORK */}
       <motion.section
         id="work"
         className="py-14 sm:py-20 md:py-24 border-t border-[var(--line)]"
